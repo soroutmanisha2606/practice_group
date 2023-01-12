@@ -1,16 +1,18 @@
 ### js
 ```
+# Day1
 promise
 closure
 setTimeout
 setInterval
+debouncing
+throttling
+
+
 OOPS
 Encapsulation
 Polymorphism
 Inheritance
-debouncing
-throttling
-Debouncing
 event bubbling
 event capturing
 currying
@@ -20,9 +22,9 @@ API
 
 ### React
 ```
+#Day1
+useState,useEffect,useRef,useMemo,useCallback,useReducer,useNavigate
 Redux
-useState,useEffect,useNav
-Flux
 Thunk
 Store
 Reducer
@@ -30,3 +32,9 @@ Action
 Disatcher
 
 ```
+
+### CSS
+
+
+### HTML
+
