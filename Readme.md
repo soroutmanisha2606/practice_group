@@ -1,12 +1,16 @@
 ### js
 ```
 # Day1
-promise
+promise 
 closure
 setTimeout
 setInterval
 debouncing
 throttling
+
+
+
+// Definition useCase   oral example  Extra Information     code
 
 
 OOPS
@@ -24,6 +28,7 @@ API
 ```
 #Day1
 useState,useEffect,useRef,useMemo,useCallback,useReducer,useNavigate
+
 Redux
 Thunk
 Store
