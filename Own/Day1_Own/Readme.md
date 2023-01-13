@@ -160,3 +160,65 @@ timer(1000);
 ```
 we can simply clear the timer using clearInterval then it will stop the execution
 ```
+
+## Debouncing
+
+### Definition :
+```
+we can call it a pattern or technique to restrict the calling of a time consuming function frequently by delaying the execution untill a specified time to avoid uneccesary calling
+```
+### USECASES :
+```
+Like in Search or i can say calling api according to input in search bar
+```
+### Examples :
+```
+let val;
+const handleInput=(e)=>{
+//    console.log('inside handleInput')
+   val=e.target.value;
+   debounced();
+}
+
+
+const debounce=(func,delay)=>{
+    // console.log('inside debounce')
+    let timer;
+    return function(){
+        // console.log('inside return func');
+        if(timer){
+            // console.log('inside timer');
+            clearTimeout(timer);
+        }
+        timer=setTimeout(()=>{
+            func();
+        },delay)
+    }
+
+}
+
+const fun=()=>{
+    // console.log('inside fun')
+    console.log(val);
+}
+const debounced=debounce(fun,2000);
+```
+### Extra Information :
+```
+
+```
+
+## Throttling
+
+### Definition :
+```
+```
+### USECASES :
+```
+```
+### Examples :
+```
+```
+### Extra Information :
+```
+```
