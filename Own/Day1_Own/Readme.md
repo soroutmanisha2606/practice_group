@@ -100,5 +100,63 @@ myfunction('Aashu');
 
 ### Extra Information :
 ```
-We can simply use closures while creating funciton inside functions.
+We can simply use closures while creating function inside functions.
+```
+
+## setTimeout
+
+### Definition :
+```
+Basically it is a delaying method ...means if we want to call a function after some seconds then we use it and it will run only once and talking about it's return value it return the it return a ID which can be used to clear timeout..
+It will take two params one is the function that we want to run after the delay and second one is the delay timer and we have to give the delay in milliseconds
+```
+### USECASES : 
+```
+ it is used in manipulating the UI according to need or in animations or while we want to delay something...
+```
+### Examples :
+```
+const timer=()=>{
+    let ID=setTimeout(()=>{
+        console.log('Hii after some seconds')
+    },2000);
+}
+timer();
+```
+
+### Extra Information :
+```
+To stop the  execution we have to clear the ID like we have to use clearTimeout(ID)
+```
+
+## setInterval
+
+### Definition :
+```
+It is same as setTimeout but the only differnce is that it run repeatedly till we stop the execution ..As it is also the timing events so yeah it also takes two params one is function which we want to run repeatively and onw is the delay timer like the delay between the repetition..
+```
+### USECASES : 
+```
+Like setTimeout is also used in Dom manipulation like in animations,carousels etc....
+```
+### Examples :
+```
+let time=1;
+const timer=(delay)=>{
+    let ID=setInterval(()=>{
+        console.log(`HII ${time} time`);
+        time++;
+        if(time==4){
+            console.log('timer is 4 here')
+            clearInterval(ID)
+        }
+    },delay)
+}
+
+timer(1000);
+```
+
+### Extra Information :
+```
+we can simply clear the timer using clearInterval then it will stop the execution
 ```
